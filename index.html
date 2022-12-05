@@ -10,36 +10,53 @@
 
   <body>
     <header>
+      <!--Logo-->
+      <section>
+        <p id="logo">
+          <img class="logoimg" src="./imagenes/descarga2.jpg" alt="Logo" />
+        <p>
+      </section>
+
       <!------Barra de navegación con lista------>
-      <nav>
+      <nav class="navegacion">
         <!-----Lista1------>
-        <ol>
-          <li>
+        <ul class="secciones">
+          <li class="nav_item">
             <a href="./index.html">Inicio</a>
           </li>
-          <li>
+          <li class="nav_item">
             <a href="./quienes_somos.html">Nosotros</a>
           </li>
-          <li>
+          <li class="nav_item">
             <a href="./portafolio.html">Portafolio de trabajos</a>
           </li>
-          <li>
+          <li class="nav_item">
             <a href="./contacto.html">Contacto</a>
           </li>
-        </ol>
+          <li>
+            <input type="text" name="Busqueda" id="Busqueda" placeholder="Buscar">
+          </li>
+        </ul>
+        <div class="carro">
+          <ul>
+            <li class="carrito">
+              <p>Agregar al carrito</p>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <!-------Logo-------->
-      <!----Etiqueta div-->
-      <div>
-        <img src="./imagenes/descarga2.jpg" alt="Logo" />
-      </div>
     </header>
+
     <main>
+      
+      <div class="div1">
+        <h4 class="h4">"Atrae más clientes y posiciónate como líder en tu industria"</h4>
+      </div>
       <section>
         <h1>Desarrollador profesional front-end</h1>
         <!-----Imagen por url local------>
-        <img src="./imagenes/images2.jpg" alt="ImagenLocal" />
-        <div>
+        <div class="c1">
+          <img src="./imagenes/images2.jpg" alt="ImagenLocal" />
           <p id="texto1">
             Un desarrollador front-end trabaja la interfaz de usuario desde el
             punto de vista del código, para que la interacción con el sistema
@@ -49,7 +66,7 @@
           </p>
         </div>
       </section>
-      <section>
+      <section class="item1">
         <h2 class="h2">Funciones del desarrollador front-end</h2>
         <!-----Imagen Web------->
         <img
@@ -118,9 +135,72 @@
           ></iframe>
         </div>
       </section>
+      <section>
+        <h2>Portafolio</h2>
+        <div class="grid_prueba">
+          <div><img src="./imagenes/galeria1.jpg" alt="imagen1"></div>
+          <div><img src="./imagenes/galeria2.jpg" alt="imagen2"></div>
+          <div><img src="./imagenes/galeria3.jpg" alt="imagen3"></div>
+          <div><img src="./imagenes/galeria4.jpg" alt="imagen4"></div>
+          <div><img src="./imagenes/galeria5.jpg" alt="imagen5"></div>
+        </div>
+      </section>
+      <section>
+        <h2>Donde nos encontramos</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241387.53654186014!2d-98.29726489892305!3d19.03380605284718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0916b41d721%3A0x855938e40c92cbcd!2sPuebla%2C%20Pue.!5e0!3m2!1ses!2smx!4v1668907623652!5m2!1ses!2smx"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <section>
+        <h2>Dudas o más información</h2>
+        <!--------Formulario------->
+        <form>
+          <label for="">Nombre</label>
+          <input type="text" placeholder="Nombre" required />
+          <input type="text" placeholder="Apellido" required />
+          <label for="">Edad</label>
+          <!------Formulario desplegable------>
+          <form action="">
+            <select name="" id="">
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+            </select>
+          </form>
+          <label for="">Correo electrónico</label>
+          <input type="email" required />
+          <label for="">Dirección</label>
+          <input type="adress" required />
+          <label for="">Número de telefono</label>
+          <input type="number" required />
+          <div>
+            <h4>Tipo de perfil</h4>
+            <label for="">Perfil 1</label>
+            <input type="radio" name="Perfil 1" id="" />
+            <label for="">Perfil 2</label>
+            <input type="radio" name="Perfil 2" id="" />
+            <label for="">Perfil 3</label>
+            <input type="radio" name="Perfil 3" id="" />
+          </div>
+          <input type="submit" value="Enviar" />
+          <div>
+            <h3>Comentarios</h3>
+            <!-----Textarea-------->
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar Comentarios" />
+            <input type="reset" value="Limpiar" />
+          </div>
+        </form>
+      </section>
     </main>
     <!-----Aside------>
-    <aside class="aside">
+    <aside class="itemL">
       <iconify-icon icon="ic:baseline-whatsapp"></iconify-icon>
       <audio controls autoplay>
         <source src="./audio/sound.mp3" type="audio/mp3" />
