@@ -1,0 +1,20 @@
+{
+  "name": "prueba-a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isra-MG/Prueba-A.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Isra-MG/Prueba-A/issues"
+  },
+  "homepage": "https://github.com/Isra-MG/Prueba-A#readme"
+}

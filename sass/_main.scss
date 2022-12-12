@@ -1,0 +1,28 @@
+main {
+    section {
+        div {
+            div {
+                .correcto {
+                   @include botonesCarrito (green);
+                }
+                .error {
+                    @include botonesCarrito (red);
+                }
+                .alerta {
+                    @include botonesCarrito (yellow);
+                }
+            }
+    }
+    section {        
+        .indexH1 {
+            font-family: $tipografiaPrincipal;
+            font-size: 24px;
+            color: black;
+            font-style: italic
+        }
+        p {
+            @extend .indexH1;
+        }
+    }
+    }
+}

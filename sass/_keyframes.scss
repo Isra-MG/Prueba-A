@@ -1,0 +1,9 @@
+@keyframes logomovimiento{
+    from{
+        transform: translateX(-500px);
+    }/*punto inicial*/
+    to{
+        transform: translateX(1600px);
+    }/*punto final*/
+
+}

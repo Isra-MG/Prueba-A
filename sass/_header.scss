@@ -1,0 +1,33 @@
+header{
+    nav {
+        .navegación {
+            background-color: rgb(4, 60, 35);
+            border: hidden;
+            list-style: none;
+        }
+        .secciones {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        ul {
+            color: black;
+            .nav_item{
+                flex-grow: 1;
+                flex-shrink: 1;
+            
+                background-color: rgb(129, 222, 234);
+                border-radius: 10px;
+                border: 1px solid rgb(4, 60, 35);
+                list-style: none;
+                font-style: italic;
+                text-align: center;
+                }
+            /*.nav_item:hover a {
+                    color: rgb(50, 26, 76);
+                    font-size: 18px;
+                    font-weight: bold;
+                }*/                
+            }
+        }
+    }
