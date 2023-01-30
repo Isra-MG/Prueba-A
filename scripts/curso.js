@@ -361,3 +361,265 @@ switch(fruta){
 
 /// no funcionan con operadores logicos
 */
+
+
+
+/* For each 
+array_a_recorrer.forEach(Element => console.log(Element))
+
+//Array:
+let estudiantes = [
+    {nombre: 'A', edad: 8, padres: ['D','J']},
+    {nombre: 'B', edad: 7, padres: ['B','A']},
+    {nombre: 'C', edad: 6, padres: ['M','P']},
+    {nombre: 'D', edad: 8, padres: ['J','C']}
+]
+
+estudientes.forEach(nombreStud => {
+    console.log(nombreStud.nombre);
+})
+
+*/
+
+
+/* 
+FILTER - FIND - SOME
+
+//Array:
+let estudiantes = [
+    {nombre: 'A', edad: 8, padres: ['D','J']},
+    {nombre: 'B', edad: 7, padres: ['B','A']},
+    {nombre: 'C', edad: 6, padres: ['M','P']},
+    {nombre: 'D', edad: 8, padres: ['J','C']}
+]
+
+//filter:
+let edadStud = estudiantes.filter(elemento => elemento.edad > 7)
+console.log(edadStud);
+
+//filter-includes:
+const padreStud = estudiantes.filter(elemento => elemento.padres.includes('P'))
+console.log(padreStud);
+
+//find:
+const buscarStud = estudiantes.find(Student => Student.nombre === 'D')
+console.log(buscarStud);
+
+//some:
+const nombreStud = estudiantes.some(elemento => elemento.nombre == 'D')
+console.log(nombreStud);
+
+const nombreStud2 = estudiantes.some(elemento => elemento.edad >= 5)
+console.log(nombreStud2);
+*/
+
+
+
+
+
+/*
+MAP - REDUCE
+
+//Array:
+let estudiantes = [
+    {nombre: 'A', edad: 8, padres: 'J'},
+    {nombre: 'B', edad: 7, padres: 'B'},
+    {nombre: 'C', edad: 6, padres: 'P'},
+    {nombre: 'D', edad: 8, padres: 'M'}
+]
+
+//map: 
+const nombres = estudiantes.map(elemento => elemento.nombre)
+console.log(nombres);
+
+const edadNew = estudiantes.map(eNuevas => {
+    return {
+        nombre: eNuevas.nombre,
+        edad: eNuevas.edad + 1,
+    }
+})
+console.log(edadNew);
+
+
+//reduce:
+
+acumulador
+actual
+indice
+arreglo
+
+        estructura:
+
+        const estructuraReduce = array.reduce(callback(acumulador, valorActual) => acumulador + valorActual.nombre, valorInicial)}
+
+
+let numeros = [1, 2, 3, 4];
+
+const suma = numeros.reduce((acumulador, el) => acumulador + el, 6)
+console.log(suma);
+
+
+fruits = [
+    {des: 'orange', amount: 50},
+    {des: 'orange', amount: 50},
+    {des: 'apple', amount: 75},
+    {des: 'kiwi', amount: 30},
+    {des: 'melon', amount: 24}
+]
+
+const itemNew = fruits.map(item => item.amount)
+console.log(itemNew);
+
+let suma = itemNew.reduce((anterior, actual) => anterior + actual, 0)
+console.log(suma);
+*/
+
+
+
+/* 
+SORT
+
+const numeros = [10, 25, 38, 40, 56, 61]
+
+//menor a mayor:
+let ordenar1 = numeros.sort((a, b) => a-b);
+console.log(ordenar1);
+
+//mayor a menor:
+let ordenar2 = numeros.sort((a, b) => b-a);
+console.log(ordenar2);
+
+
+//Ordenar Strings
+
+let palabras = ["a", "b", "c", "d", "e", "f"];
+
+palabras.sort((a, b) => {
+    if(a == b){
+        return 0;
+    }
+    if(a < b){
+        return -1;
+    }
+    return 1;
+})
+console.log(palabras);
+
+palabras.sort((a, b) => {
+    if(a == b){
+        return 0;
+    }
+    if(b < a){
+        return -1;
+    }
+    return 1;
+})
+console.log(palabras);
+
+
+
+
+let estudiantes = [
+    {nombre: 'A', edad: 8, padres: 'J'},
+    {nombre: 'B', edad: 7, padres: 'B'},
+    {nombre: 'C', edad: 6, padres: 'P'},
+    {nombre: 'D', edad: 8, padres: 'M'}
+]
+
+        //ordenar por edad
+
+estudiantes.sort((a, b) => {
+    if(a.edad == b.edad){
+        return 0;
+    }
+    if(b.edad < a.edad){
+        return -1;
+    }
+    return 1;
+})
+console.log(estudiantes);
+
+estudiantes.sort((a, b) => {
+    if(a.edad == b.edad){
+        return 0;
+    }
+    if(a.edad < b.edad){
+        return -1;
+    }
+    return 1;
+})
+console.log(estudiantes);
+
+        //ordenar por nombre
+
+estudiantes.sort((a, b) => {
+    if(a.nombre == b.nombre){
+        return 0;
+    }
+    if(b.nombre < a.nombre){
+        return -1;
+    }
+    return 1;
+})
+console.log(estudiantes);
+
+estudiantes.sort((a, b) => {
+    if(a.nombre == b.nombre){
+        return 0;
+    }
+    if(a.nombre < b.nombre){
+        return -1;
+    }
+    return 1;
+})
+console.log(estudiantes);
+
+*/
+
+
+/* 
+Objectmatch
+
+MATH
+
+//Valor máximo:
+console.log(Math.max(12.7, 11, 25, 67));
+
+//Valor mínimo:
+console.log(Math.min(3, 78, 90, 12.7));
+
+//Máximo entero menor o igual a un número:
+console.log(Math.floor(12.7));
+
+//Redondear un valor:
+console.log(Math.round(12.7));
+
+//Exponencial:
+console.log(Math.pow(10, 2));
+
+//Número aleatorio entre 0 y 1:
+console.log(Math.random());
+
+//Raiz cuadrada:
+console.log(Math.sqrt(12.7));
+
+//Tangente de un numero:
+console.log(Math.tan(45));
+
+
+let estudiantes = [
+    {nombre: 'A', edad: 8, promedio: 5},
+    {nombre: 'B', edad: 7, promedio: 8},
+    {nombre: 'C', edad: 6, promedio: 9},
+    {nombre: 'D', edad: 8, promedio: 3}
+]
+
+let promedioMax = 0;
+
+estudiantes.forEach(elemento => {
+    console.log(elemento.promedio);
+    promedioMax = Math.max(elemento.promedio, promedioMax);
+
+})
+console.log('El promedio máximo es:', promedioMax);
+*/
